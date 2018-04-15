@@ -2,8 +2,151 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
     <title>Задача «Морда»</title>
 </head>
 <body>
+    <div class="above_search">
+        <div class="above_search__geoposition">&#x27A4;Казань</div>
+        <div class="above_search__news">
+            <span class="above_search__news__heading">
+                <span class="above_search__news__heading__main blue">Сейчас в СМИ &nbsp;</span>
+                <span class="above_search__news__heading__city blue">в Казани &nbsp;</span>
+                <span class="above_search__news__heading__date minor">13 ноября, понедельник 16:57</span>
+            </span>
+            <ul>
+                <li><span class="above_search__news__1">В Кремле ответили на слова экс-главы ЦРУ о "запуганном" Путиным Трампе</span>
+                <li><span class="above_search__news__2">Число жертв землетрясения в Иране и Ираке превысило 350 человек</span>
+                <li><span class="above_search__news__3">Вероятной целью проникновения в РФ украинского дрона назвали шпионаж</span>
+                <li><span class="above_search__news__4">Кремль рассказал о местонахождении не явившегося в суд Сечина</span>
+                <li><span class="above_search__news__5">Кремль прокомментировал перенос послания Путина Федеральному собранию</span>
+            </ul>
+            <span class="above_search__quote"><strong>USD ЦБ&ensp;</strong>59,18&ensp;<span class="minor">-0,10&emsp;</span></span>
+            <span class="above_search__quote"><strong>EUR ЦБ&ensp;</strong>68,92&ensp;<span class="minor">-0,06&emsp;</span></span>
+            <span class="above_search__quote"><strong>Нефть&ensp;</strong>63,44&ensp;<span class="minor">-0,27%&emsp;</span></span>
+        </div>
+        <div class="above_search__stock">
+            <img src="stock.png" alt="music99rub">
+            <div class="below_search__section blue">Новая выгодная<br>цена на подписку</div><br>
+            на Яндекс.Музыку
+        </div>
+        <div class="above_search__settings">Настройка</div>
+        <div class="above_search__mail">
+            <br>
+            <strong>&ensp;<span class="red">l</span>ogin</strong>
+            <br>
+            <br>
+            <span>&ensp;Почта&ensp;<strong>138</strong></span>
+        </div>
+    </div>
+    <div class="search">
+        <span class="search__title"><span class="red">Я</span>ндекс</span>
+        <div>
+            <span class="search__service blue">Видео &ensp;</span>
+            <span class="search__service blue">Картинки &ensp;</span>
+            <span class="search__service blue">Новости &ensp;</span>
+            <span class="search__service blue">Карты &ensp;</span>
+            <span class="search__service blue">Маркет &ensp;</span>
+            <span class="search__service blue">Переводчик &ensp;</span>
+            <span class="search__service blue">Музыка &ensp;</span>
+            <span class="search__service blue">ещё</span><br>
+            <div class="search__input"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAElSURBVEhL5ZS9SsNwFMWzWREnxfcprkJ9gEAg5AtChswG0dlG38WPZ9CtbxEHUZd2C+g5cAKh+Q9pbwelPzik93/uPTeEpN5+UJblYRzHD9C7VAdBMJFtJ0mSe+inLy6RbYd37VjQyLazHt5Jth1XOCXbjiuckm3HFU7JtuMKp2TbcYVTsu24winZm4N3fMUA3/ePVDfr4d13EIbhsc6WrEeB5oVCpqoHXzJ0R489qhesR4HmWw5h+JG1/otq3rU0L4rigB5+P6v3hvUosiw7w9A3B6FKxwMQeq3wL1xPdTwODFxCLQOgJ4RM+bz1zM9Rv8hr0zSdaWwzOIiATwUNhCUfURRdqH078jw/QViFsLde+CvqK3pq2w3dApW75/8v+IN43i/jmhfublGIVAAAAABJRU5ErkJggg==">&ensp;<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFSSURBVEhL7ZK9SgNBFIU3tSD4AvoE2tgIWljYiA8gwlb7yxZLWlu7YGMhiEXsTCXYBruAbyAINiJhFRsjQgptRL+z3BUhGxAyoEgGPubMuffOyW7Wm66/sfI8n03TdD2O4w0XRFG0wrWN8nLf92cw75Ik+XDMcRmgtJrixOhHlwEc1r4VCniQpuER+uYP0LfwDkNpvFdhvjzV5A80g+6PBGAuVmf0Fvu81Xat9wW/I81+KUx3VJNWr2bwRgPgBE6laTiDI/N76Ba8wbU0np62MF+eavJ7mkHXBjijNoBPdTXLsjlBwwVeYfpA9SAIFvgoYmm8TSEtr5rjvGf12idQsVw0XLHpD5PusmmoCW3T+8K0vGqdw9gAZ4wL2OY1hdbQ5NGXfwK9XRhKM3to878T4IyvgDAMl+oaJoWAmzKA1eDQhid4dsQ9r3rH7p+u/7087xMf4pJd7buTwwAAAABJRU5ErkJggg==">&ensp;</div><div class="search__find">Найти</div><div class="search__find_tale"></div>
+            <p class="search__example">Найдется всё. Например, <span class="minor">выхожу один я на дорогу</span></p>
+            <a href="https://p20.huawei.ru/?utm_source=yandex_main&utm_medium=cpm_banners_bd&utm_term=__r1gx-y60pz__&utm_content=&utm_campaign=2018Q1_Huawei_P20_BD"><img src="reklama.png" width="726" height="88" alt="huawei.ru"></a>
+        </div>
+    </div>
+    <div class="below_search">
+        <div class="empty"></div>
+        <div class="below_search__visited">
+            <span class="below_search__section blue">Посещаемое</span><br>
+            <strong>Маркет</strong>&#8212;китайская распродажа<br>
+            <strong>Авто.ру</strong>&#8212;Туссан третьей серии<br>
+            <strong>Недвижимость</strong>&#8212;продажа студии<br>
+            <strong>Работа</strong>&#8212;охранником<br>
+            <strong>Здоровье</strong>&#8212;врач на связи<br>
+            <strong>Коллекции</strong>&#8212;как мелировать волосы<br>
+            <strong>Авиабилеты</strong>&#8212;из Казани
+        </div>
+        <div class="below_search__tv">
+            <span class="below_search__section blue">Телепрограмма</span>&ensp;
+            <div class="below_search__tv__online">ТВ онлайн ▶</div><br>
+            16:00&ensp;Понять. Простить&ensp;<span class="minor">41 Домашний</span><br>
+            16:30&ensp;Место встречи&ensp;<span class="minor">НТВ</span><br>
+            16:30&ensp;Детективы&ensp;<span class="minor">Пятый канал</span><br>
+            16:30&ensp;Новости&ensp;<span class="minor">РЕН ТВ</span><br>
+            16:30&ensp;Гадалка&ensp;<span class="minor">ТВ-3</span><br>
+            16:30&ensp;Реальные пацаны&ensp;<span class="minor">ТНТ</span>
+        </div>
+        <div class="below_search__others">
+            <div class="below_search__weather">
+                <span class="below_search__section blue">Погода</span>
+                <img class="below_search__weather__cloud" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKYSURBVFhH7ZTPa9NgGMfjVATpRdTLdAdxIp4U0eEPENQ/QBDx4k28eBM8qBdlCOIfMOqw9DLYUDx4GWrTdJFtCrZToUzRLm+y1to5nXXg6tZk5vHJfJKtycs0sWlB+oEvpeF9nu83T5+3QosWjQRuCG1mr3CMvjYXChNH/TSjwnl63BzsMNArgKWmhELTK5YgKlw17wgZO8yKUCbqgX0Oz5yj0nBwB/iTMNAIlYZDjWHfBoBMJ0DhIMD0EQBtP8DTDoBYW2MCWTvjhBnYCPCxC+DLUa9yewHia38Higo5Kq8vNQt8dw2AitPghbGV3rk8pXovuvs2wcNN/BArNX14eUp4++bjHRcTWnWfqOmH5HewhVoHA/cg5oSxNLSNH8Kt+xGo9HVC9vkApJTvkFSNJYlMN/FzNKEYJ8jCH9bIrbd0Aknt/AAuzTw+BUMTZSeIW0vBmH6NbPxRE+pexDGd/XQBXheGQda+QUqdg3Q+C1Ol61ApngY595UbxC2JGWfIxh9WKGdK2T1QKnWDpC1wTUbfM+5zvvTC2BisJxt/2IF+9O/CiVQ4zYNJ0ozjZOEPO9BE6ha3cVDh7btEFv6wA71KD3IbBxUu+GWy+HvkcYi8zDzpGX6rjkjKXJnX+B80nmRG96OcuZXsVkdiehe+RZHTqL5iellUjJNky0fOmdvxJnzmNghF+mxicn4H2XvBQz3eotAVI3svoqrnOQWhCj0/kL0XHGGVVxSu9CrZe8FlnuQXhSdRNRSy94IHGr9DzLhN9l7EvNneyFtm7U+yaG4mez6ioh/Ag1O8BvWUyIw3KXVhN9mujvVPLbLqTSxiCabP4NQK+Fu/wKDJIMIAz/CT4Y5qkro4KKqLZ2UZ1pFdixb/M4LwCzV+gMvnZUThAAAAAElFTkSuQmCC">
+                <span class="big_size">-3 °C</span><br>
+                Вечер -5, ночь -7
+                <br>
+                <br>
+            </div>
+            <div class="below_search__jam">
+                <span class="below_search__section blue">Пробки</span>
+                <img class="below_search__weather__light" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAIAAADJ6rCnAAADM0lEQVRIib3VW0hTcRwH8P+mpnaPyry0tYjmJSEF0R40eghM8anWQ4I+FaWYRARBIZLRQ2XYRaTXMo1IAs2JaPeLmm7qppvXpjvaPF7mnLud7Zzz/3XOLDWP5CbRn+/rPvv9f//f/38Q/OuF/r+IMWZY2k457VYrl3mHw87QtH8iZt0MRbrMLXMDN2e0eVbdWWd/LjWQY9PnmjpyGp6fe3i3sKT4anV1tV6vN5vNfxcxS1up2RZL3zWiKWKsIWCyGVFtiO1AoOKDO5CrVdRYEZydtTMhXpJx4nhlZSVJkgzDcHtZTcSMdaSCaJKM1geTTWJXC08sWIvBKuRpQ5PN4ie3QlMSo+TyaIVCMTFh4tAVIsas0zJcSjTtNSoDudLcrUulCUN/Q5aPosdFm9KSw+VyuUJxWterpWnPksjSNgdZTzRLR+vF4w2Ial2lOmGm3ohLr2yJj42USqX5+RcIwrgoYto5QrZljCo3jimR7fPa1mJ0NYHZWTuk0qi42Lj7ZWUURSHvcbgcE7Wj9RtG6kRTzfyOfBcdX0XK8mCpNFIikShOnezt1fIi67HMDRSP1CHjazT3waf9LoZtR+ONAelpuw7sj0pKSqp69pQXGffUtOY8JxJK7j/94BYy+15cnLf1UExkTEx0YWHBgjg9rSngxDHvmfgr2r+I6h6EJieEy2SyzMxMbx8Zl338haEWmRr5WfNXZNrR9DtR5rEwrpWpqWlo4aaw7hmr4ZFVo2C7wv0VuZnnJlf7Muj2pW33ricuuzOYwY4u0B32V/wVNWJVQW5t0vJbyIJnHAbT1yly6dyMv59ZLmJgHWC8uH5REwFT5StfCjBXgVa2TrH/KDi7Be8jZQBDDqhEfnNd2+FHEbB2gcidj70DNHtAHeAzJwJ1IAylg1MrfHG93WTmwfIKNBJfK+0MAX0y2FsAu1YVvd1kbXi2BvpSQB20RnXdu2EwA2yf+Dr+fHGFLg3zbzFxmXe5JnSGgorrg9ibAFCHQHcY6OLBdIOfYm7yfq+1v4WAKZi8A/1p0CMH7T4+PQdBf4Q1lYCHFP7Al+8111kr0CS4CaCGgRoCt5G3mDl+H4L1E9q3B5X/lBfZAAAAFHRFWHRTb2Z0d2FyZQBZYW5kZXguRGlza05f+JEAAAAASUVORK5CYII=">
+                <span class="big_size">4 балла</span><br>
+                Местами затруднения
+                <br>
+                <br>
+            </div>
+            <div class="below_search__map">
+                <span class="below_search__section blue">Карта Казани</span><br>
+                <strong>Такси</strong> &ensp;<strong>Расписания</strong><br>
+                <strong>Междугородные автобусы</strong>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div class="empty"></div>
+        <div class="below_search__jokes">
+            <span class="below_search__section blue">Лучшие анекдоты</span><br>
+            <br>
+            <span>Раздел: </span><span class="blue">Медицинские</span>
+            <div class="below_search__joke">
+                — Доктор, но вы же принимали клятву Гиппократа в университете!<br>
+                — Я много чего в университете принимал.
+            </div>
+            <p class="generate_joke">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                 width="16" height="16"
+                 viewBox="0 0 252 252"
+                 style="fill:#666666;"><g transform=""><g fill="none" fill-rule="none" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,252v-252h252v252z" fill="none" fill-rule="nonzero"></path><g fill="#9fccdc" fill-rule="evenodd"><g id="surface1"><path d="M210,126c0,46.38867 -37.61133,84 -84,84c-46.38867,0 -84,-37.61133 -84,-84c0,-46.38867 37.61133,-84 84,-84c11.68945,0 22.76367,2.50195 32.89454,6.8086l-26.29102,28.0957l78.66797,-2.625l-6.68555,-74.2793l-23.21484,24.77344c-16.40625,-9.02344 -35.27344,-14.27344 -55.3711,-14.27344c-63.7793,0 -115.5,51.7207 -115.5,115.5c0,63.7793 51.7207,115.5 115.5,115.5c63.7793,0 115.5,-51.7207 115.5,-115.5z"></path></g></g></g></g></svg>
+                <span class="blue">Показать ещё</span>
+            <p>
+        </div>
+        <div class="below_search__auto">
+            <span class="below_search__section blue">Автомобильные новости</span>
+            <div class="below_search__auto__news">
+                <div class="below_search__auto__news__child_1">
+                    <div class="below_search__auto__news__child_2">
+                        <ul>
+                            <li>Правительство поддержало законопроект о регистрации машиномест<span class="minor">&ensp;12:19</span>
+                            <li>Обзор нового Mitsubishi, за которым выстроилась очередь<span class="minor">&ensp;12:01</span>
+                            <li>"Лады" оснастят системой управления со смартфона<span class="minor">&ensp;11:40</span>
+                            <li>Появились рендеры нового поколения Focus RS<span class="minor">&ensp;11:30</span>
+                            <li>Каждый десятый автомобиль в России зарегистрирован на юридическое лицо<span class="minor">&ensp;12:09</span>
+                            <li>Священник отчитал прихожан, а они заставили его продать Porsche<span class="minor">&ensp;12:11</span>
+                            <li>Илон Маск признал ошибкой чрезмерную автоматизацию завода Tesla<span class="minor">&ensp;11:32</span>
+                            <li>В сети опубликовали первые фото новых Toyota Corolla Axio<span class="minor">&ensp;11:33</span>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="below_search__afisha">
+                <span class="below_search__section blue">Афиша</span><br>
+                Субурбикон&ensp;<span class="minor">премьера в чт</span><br>
+                Последний богатырь&ensp;<span class="minor">приключения</span><br>
+                Фиксики: Большой секрет&ensp;<span class="minor">мультфильм</span><br>
+                Тор: Рагнарёк&ensp;<span class="minor">фэнтези</span><br>
+                Убийство в Восточном...&ensp;<span class="minor">драма</span><br>
+                <strong>Концерты&#8212;Brainstorm</strong>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,257 @@
+body {
+    display: grid;
+    grid-template-rows: 300px 220px 600px;
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    min-width: 1500px;
+}
+
+
+/* everything above search panel*/
+.above_search {
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 1fr 0.5fr;
+}
+
+.above_search__geoposition {
+    color: grey;
+    margin: 15px 0 0 20px;
+}
+
+.above_search__news {
+    margin: 70px 0 0 0;
+}
+
+.above_search__news__heading__main {
+    font-size: 1.2rem;
+}
+
+.above_search__news__heading__main:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.above_search__news__heading__city {
+    opacity: .5;
+    font-size: 1.2rem;
+}
+
+.above_search__news__heading__city:hover {
+    color: red;
+    cursor: pointer;
+}
+
+ul {
+    line-height: 1.5rem;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 0;
+}
+
+li:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.blue {
+    color: #0054b9;
+}
+
+.minor {
+    color: grey;
+}
+
+.above_search__stock {
+    margin: 70px 0 0 0;
+}
+
+.above_search__settings {
+    text-align: right;
+    margin: 15px 20px;
+}
+
+.above_search__mail {
+    margin: 10px 10px;
+    width: 180px;
+    height: 80px;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1), 0 2px 6px 0 rgba(0, 0, 0, .1);
+}
+
+
+
+/* main part of the page*/
+.search {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.search__title {
+    text-align: right;
+    margin: 15px 15px;
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+}
+
+.red {
+    color: red;
+}
+
+.search__service {
+    font-size: 1rem;
+}
+
+.search__service:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.search__input {
+    text-align: right;
+    opacity: .5;
+    height: 30px;
+    border: 2.5px solid #ffcc00;
+    margin-top: 8px;
+    width: 720px;
+    display: inline-block;
+    cursor: text;
+}
+
+.search__find {
+    position: relative;
+    top: -4px;
+    height: 35px;
+    width: 75px;
+    line-height: 35px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #ffdb4d;
+    display: inline-block;
+}
+
+.search__find:hover {
+    cursor: pointer;
+}
+
+.search__find_tale {
+    position: relative;
+    top: 6px;
+    width: 0;
+    height: 0;
+    border-top: 16px solid transparent;
+    border-left: 9px solid #ffdb4d;
+    border-bottom: 16px solid transparent;
+    display: inline-block;
+}
+
+.search__example {
+    margin-top: 10px;
+}
+
+strong:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* everything below search panel */
+.below_search {
+    display: grid;
+    grid-template-columns: 315px repeat(2, 300px) 350px;
+}
+
+.below_search__section {
+    font-size: 1.2rem;
+}
+
+.below_search__section:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.below_search__visited {
+    line-height: 2rem;
+}
+
+.below_search__tv {
+    line-height: 2rem;
+}
+
+.below_search__tv__online {
+    display: inline-block;
+    width: 100px;
+    height: 25px;
+    line-height: 25px;
+    background: linear-gradient(to right, #00bfff, #5d76cb);
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.below_search__joke {
+    display: inline-block;
+    width: 250px;
+}
+
+.generate_joke {
+    margin-top: 50px;
+}
+
+.below_search__auto {
+}
+
+.below_search__auto__news {
+    width: 250px;
+    height: 300px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.below_search__auto__news__child_1 {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    padding-right: 20px;
+    box-shadow: inset -20px 10px 15px 10px rgba(255,255,255,1),
+                inset -20px -10px 15px 10px rgba(255,255,255,1);
+}
+
+.below_search__auto__news__child_2 {
+    position:relative;
+    background:#fff;
+    z-index:-1;
+}
+
+
+.below_search__auto__news__child_2 > ul > li {
+    margin: 0 0 8px 0;
+    line-height: 1.2rem;
+}
+
+.below_search__others {
+}
+
+.below_search__weather {
+    line-height: 2rem;
+}
+
+.below_search__weather__cloud {
+    margin-top: -20px;
+}
+
+.below_search__jam {
+    line-height: 2rem;
+}
+
+.below_search__weather__light {
+}
+
+.below_search__map {
+    line-height: 1.5rem;
+}
+
+.big_size {
+    font-size: 1.2rem;
+}
+
+.below_search__afisha {
+    line-height: 2rem;
+}
